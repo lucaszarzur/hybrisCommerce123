@@ -6,7 +6,6 @@
 /build/
 target/
 node_modules/
-# theme-pearson/
 .editorconfig
 
 */frontend/package-lock.json
@@ -114,20 +113,20 @@ ruleset.xml
 # Not excluded files - MUST BE AT THE TOP
 !installer/recipes/**
 
-!config*/**
-#!config*/local.properties
-#!config*/localextensions.xml
-#!config*/.project
-#!config*/.classpath
-#!config*/customize
-#!config*/customize/**/*
-#!config*/licence
-#!config*/licence/hybrislicence.jar
+!/config*/**
+#!/config*/local.properties
+#!/config*/localextensions.xml
+#!/config*/.project
+#!/config*/.classpath
+#!/config*/customize
+#!/config*/customize/**/*
+#!/config*/licence
+#!/config*/licence/hybrislicence.jar
 
 
 # Folders
-/bin/
-!/bin/custom
+/bin/ext-*/
+/bin/platform/**/*
 /log
 /temp
 /roles
@@ -194,7 +193,6 @@ AddPagesHere.txt
 AddImagesHere.txt
 wro_addons.xml
 *.xmi
-pearsonbackoffice/resources/backoffice/
 
 .idea/
 bin/.idea/
@@ -220,5 +218,4 @@ Release\.key
 ######################
 **/frontend/script-manifest.json
 **/frontend/style-manifest.json
-**/web/webroot/_ui/responsive/theme-pearson/**/*
 !**/resources/npm/node/node-v6.9.4-linux-x64/*
