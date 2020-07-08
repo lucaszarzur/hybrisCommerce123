@@ -126,6 +126,8 @@ ruleset.xml
 
 
 # Folders
+/bin/
+!/bin/custom
 /log
 /temp
 /roles
@@ -133,11 +135,6 @@ ruleset.xml
 /solr/
 .metadata/
 sampleconfigurations/**
-/bin/ext-*/
-/bin/platform/**/*
-!/bin/platform/lib
-!/bin/platform/lib/dbdriver
-!/bin/platform/lib/dbdriver/mysql-connector-java-5.1.23-bin.jar
 
 
 **/RemoteSystemsTempFiles/
