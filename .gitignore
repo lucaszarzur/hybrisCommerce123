@@ -1,0 +1,227 @@
+######################
+# General
+######################
+ 
+# Directories #
+/build/
+target/
+node_modules/
+# theme-pearson/
+.editorconfig
+
+*/frontend/package-lock.json
+
+# OS Files #
+.DS_Store
+  
+*.class
+
+*.less 
+# Package Files #
+*.war
+*.ear
+*.db
+*.iml
+ 
+# Misc Files
+#.gitignore
+/.project
+/.classpath
+/
+ 
+ 
+######################
+# Java
+######################
+ 
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+ 
+ 
+######################
+# Windows
+######################
+  
+# Windows image file caches
+Thumbs.db
+  
+# Folder config file
+Desktop.ini
+  
+  
+######################
+# OSX
+######################
+  
+.DS_Store
+.svn
+  
+# Thumbnails
+._*
+  
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+ 
+ 
+######################
+# Linux
+######################
+ 
+*~
+  
+  
+######################
+# Eclipse
+######################
+  
+*.pydevproject
+.metadata
+tmp/
+**/eclipsebin/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+.eclipse-pmd
+ruleset.xml
+ 
+# External tool builders
+.externalToolBuilders/
+  
+# Locally stored "Eclipse launch configurations"
+*.launch
+  
+# CDT-specific
+.cproject
+  
+# PDT-specific
+.buildpath
+ 
+# Ignoring .svn folder
+.svn/*
+ 
+# Git files created by Eclipse
+**/.gitginore
+  
+  
+######################
+# Hybris
+######################
+ 
+# Not excluded files - MUST BE AT THE TOP
+!installer/recipes/**
+
+!config*/**
+#!config*/local.properties
+#!config*/localextensions.xml
+#!config*/.project
+#!config*/.classpath
+#!config*/customize
+#!config*/customize/**/*
+#!config*/licence
+#!config*/licence/hybrislicence.jar
+
+
+# Folders
+/log
+/temp
+/roles
+/data/
+/solr/
+.metadata/
+sampleconfigurations/**
+/bin/ext-*/
+/bin/platform/**/*
+!/bin/platform/lib
+!/bin/platform/lib/dbdriver
+!/bin/platform/lib/dbdriver/mysql-connector-java-5.1.23-bin.jar
+
+
+**/RemoteSystemsTempFiles/
+**/.externalToolBuilders/
+licences/
+
+build-tools/
+installer/*
+ 
+# Folders - Automagically Generated
+ 
+**/classes/**
+**/gensrc/**
+**/hmc/bin/**
+**/.recommenders/**
+**/hmc/classes/**
+**/web/addonsrc/**
+**/web/commonwebsrc/**
+**/web/testclasses/**
+**/web/webroot/_ui/addons/**
+**/web/webroot/cmscockpit/**
+**/web/webroot/cockpit/**
+**/web/webroot/productcockpit/**
+**/web/webroot/WEB-INF/addons/**
+**/web/webroot/WEB-INF/classes/**
+**/web/webroot/WEB-INF/messages/addons/**
+**/web/webroot/WEB-INF/tags/addons/**
+**/web/webroot/WEB-INF/tld/addons/**
+**/web/webroot/WEB-INF/views/addons/**
+
+
+# Patterns ignored on Git <1.7.x
+hmc/bin/
+build/
+gensrc/
+addonsrc/
+commonwebsrc/
+ 
+# Files
+[Gg]enerated*.java
+build.xml
+extensioninfo.xsd
+hmc.xsd
+platformhome.properties
+items.xsd
+beans.xsd
+*testclasses.xml
+*webtestclasses.xml
+.pmd
+.spring[Bb]eans
+dummy.txt
+AddResponsiveTagsHere.txt
+AddTagLibsHere.txt
+AddCmsComponentsHere.txt
+AddPageFragmentsHere.txt
+AddPagesHere.txt
+AddImagesHere.txt
+wro_addons.xml
+*.xmi
+pearsonbackoffice/resources/backoffice/
+
+.idea/
+bin/.idea/
+bin/idea-module-files/
+ 
+######################
+# JREBEL
+######################
+ 
+rebel.xml
+
+# Maven
+**/lib/.lastupdate
+**/lib/spring*.jar
+
+Release\.key
+
+#JALOs
+*.jalo
+
+######################
+# FRONT HASH
+######################
+**/frontend/script-manifest.json
+**/frontend/style-manifest.json
+**/web/webroot/_ui/responsive/theme-pearson/**/*
+!**/resources/npm/node/node-v6.9.4-linux-x64/*
