@@ -32,3 +32,10 @@ Linux:
 
   $ cd /app/z-pessoais/hybris_accelerator_commerce_123/hybris/bin/platform
   $ ant clean all
+
+5 - Update database:
+  $ cd /app/z-pessoais/hybris_accelerator_commerce_123/hybris/bin/platform && ant updatesystem
+
+6 - Run the content of "loadDataThroughTheHac.impex" in the Hac;
+
+
