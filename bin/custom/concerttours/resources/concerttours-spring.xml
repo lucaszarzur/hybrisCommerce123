@@ -10,12 +10,17 @@
  license agreement you entered into with SAP.
 -->
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/aop
-           http://www.springframework.org/schema/aop/spring-aop.xsd">
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="concerttours"/>
 
     <bean id="concerttoursSystemSetup" class="concerttours.setup.ConcerttoursSystemSetup">
         <!-- constructor arg injection example -->
@@ -32,5 +37,9 @@
     <bean id="ConcerttoursCustomSetup" class="concerttours.setup.ConcerttoursCustomSetup" >
         <property name="importService" ref="importService"/>
     </bean>
-			
+
+    <alias name = "defaultBandService" alias = "bandService" />
+    <bean id = "defaultBandService" class = "concerttours.service.impl.DefaultBandService" >
+        <property name = "bandDAO" ref = "bandDAO" />
+    </bean>
 </beans>
