@@ -1,0 +1,9 @@
+#Ant properties
+#Wed Mar 06 16:27:44 CET 2019
+builddate=20190306 1627
+description=concerttours
+name=concerttours
+releasedate=20181129 1417
+vendor=hybris
+version=1811.4
+version.api=1811
