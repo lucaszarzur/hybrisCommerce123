@@ -20,3 +20,15 @@ Linux:
   $ sudo mv CXCOMM181100P_4-70004085/ /app/z-pessoais/hybris_accelerator_commerce_123
 
 3 - Clone this repository in "/app/z-pessoais/hybris_accelerator_commerce_123/hybris";
+
+4 - Install recipes:
+  $ cd /app/z-pessoais/hybris_accelerator_commerce_123/installer
+  $ . ./install.sh -r b2c_acc setup
+  $ . ./install.sh -r b2c_acc initialize
+
+  $ ./install.sh -r b2b_acc setup
+  $ . ./install.sh -r b2b_acc initialize
+
+
+  $ cd /app/z-pessoais/hybris_accelerator_commerce_123/hybris/bin/platform
+  $ ant clean all
