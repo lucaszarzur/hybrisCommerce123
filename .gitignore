@@ -110,23 +110,10 @@ ruleset.xml
 # Hybris
 ######################
  
-# Not excluded files - MUST BE AT THE TOP
-!installer/recipes/**
-
-!/config*/**
-#!/config*/local.properties
-#!/config*/localextensions.xml
-#!/config*/.project
-#!/config*/.classpath
-#!/config*/customize
-#!/config*/customize/**/*
-#!/config*/licence
-#!/config*/licence/hybrislicence.jar
-
-
 # Folders
 /bin/ext-*/
 /bin/platform/**/*
+/config
 /log
 /temp
 /roles
