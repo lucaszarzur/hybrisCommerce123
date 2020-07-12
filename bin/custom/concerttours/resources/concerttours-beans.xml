@@ -9,9 +9,6 @@
  Information and shall use it only in accordance with the terms of the
  license agreement you entered into with SAP.
 -->
-<!--
-	ATTENTION: This is just an example file. You have to edit it according to your needs.
--->
 
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="beans.xsd">
 
@@ -38,6 +35,7 @@
 		<property name = "date" type = "java.util.Date" />
 		<property name = "venue" type = "String" />
 		<property name = "type" type = "String" />
+		<property name = "countDown" type="Long"/>
 	</bean>
 
 	<bean class = "concerttours.data.TourData" >
